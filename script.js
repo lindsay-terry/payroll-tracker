@@ -16,15 +16,15 @@ const collectEmployees = function() {
   //employee object to gather and store required data for each employee
   while (addAnother) {
       employee = {
-      firstName: '',
-      lastName: '',
-      salary: ''
+        firstName: '',
+        lastName: '',
+        salary: ''
     };
 
     //Prompts for assigning values to each key in employee object
     employee.firstName = prompt("Enter employee's first name.");
     employee.lastName = prompt("Enter employee's last name");
-    employee.salary = +prompt("Enter employee's salary"); //+ symbol in front of prompt renders dollar signs and decimals on webpage.
+    employee.salary = +prompt("Enter employee's salary"); 
     //Defaults to zero if a non-number is entered in the salary field
     if (isNaN(employee.salary)) {
       employee.salary = 0;
@@ -40,7 +40,7 @@ const collectEmployees = function() {
   return employeesArray;
 };
 
-console.log(employeesArray);
+// console.log(employeesArray);
 
 const displayAverageSalary = function(employeesArray) {
   //Adds all salaries together
@@ -50,7 +50,7 @@ const displayAverageSalary = function(employeesArray) {
   });
 
   //Calculates average and converts to a USD print in console.  Stores answer in variable to use in console.log string.
-  let averageSalary = (sum / employeesArray.length).toLocaleString('en-US', {style: 'currency', currency: 'USD'})
+  let averageSalary = (sum / employeesArray.length).toLocaleString('en-US', {style: 'currency', currency: 'USD'});
 
   console.log(`The average salary between our ${employeesArray.length} employee(s) is ${averageSalary}.`);
 }
@@ -58,7 +58,7 @@ const displayAverageSalary = function(employeesArray) {
 // TODO: Selects a random employee and logs their first and last name to console in provided string
 const getRandomEmployee = function(employeesArray) {
   employeesArray[Math.floor(Math.random() * employeesArray.length)];
-  console.log(`Congratulations to ${[employee.firstName]} ${[employee.lastName]}, our random drawing winner!`)
+  console.log(`Congratulations to ${[employee.firstName]} ${[employee.lastName]}, our random drawing winner!`);
 }
 
 /*
