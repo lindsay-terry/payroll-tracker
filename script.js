@@ -24,7 +24,7 @@ const collectEmployees = function() {
     //Prompts for assigning values to each key in employee object
     employee.firstName = prompt("Enter employee's first name.");
     employee.lastName = prompt("Enter employee's last name");
-    employee.salary = +prompt("Enter employee's salary"); 
+    employee.salary = parseInt(prompt("Enter employee's salary")); 
     //Defaults to zero if a non-number is entered in the salary field
     if (isNaN(employee.salary)) {
       employee.salary = 0;
