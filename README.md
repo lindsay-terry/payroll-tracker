@@ -20,6 +20,8 @@ The application starts out with a blank table titled Employee Roster, and clicki
 
 Opening the console at this point reveals a table and the employee object array have been logged to the console, as well as a calculation of the average salary among the (x) number of employees entered.  The application features a random employee function that, for each group entered, selects a random employee as a drawing winner and congratulates them in the console.
 
+Click [here](https://lindsay-terry.github.io/payroll-tracker/) for deployed application.
+
 ![Screenshot of application](assets/images/payroll-screenshot.png)
 
 ![Screenshot of application console view](assets/images/payroll-console.png)
