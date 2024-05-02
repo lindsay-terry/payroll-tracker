@@ -38,7 +38,8 @@ const collectEmployees = function() {
   }
   //returns all information gathered from the user as an array of objects
   return employeesArray;
-};
+}; 
+console.log(employeesArray);
 
 const displayAverageSalary = function(employeesArray) {
   //Adds all salaries together
